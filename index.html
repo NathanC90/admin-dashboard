@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main">
-        <div class="navbar">
+    <div class="container">
+        <div class="header">
             <div class="upper-nav">
                 <input type="text" name="search" id="search">
                 <img id="notification" src="" alt="notification bell">
@@ -29,26 +29,26 @@
 
         <div class="sidebar">
             <div class="logo">
-                <img src="" alt="logo">
+                <img src="images/logo.png" alt="logo">
                 <a href="">Dashboard</a>
             </div>
             <div class="menu">
                 <ul>
-                    <li>Home</li>
-                    <li>Profile</li>
-                    <li>Messages</li>
-                    <li>History</li>
-                    <li>Tasks</li>
-                    <li>Communities</li>
+                    <li><a href=""><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><a href=""><i class="fa-solid fa-address-card"></i> Profile</a></li>
+                    <li><a href=""><i class="fa-solid fa-message"></i> Messages</a></li>
+                    <li><a href=""><i class="fa-solid fa-clock"></i> History</a></li>
+                    <li><a href=""><i class="fa-solid fa-list-check"></i> Tasks</a></li>
+                    <li><a href=""><i class="fa-solid fa-people-group"></i> Communities</a></li>
                 </ul>
                 <ul>
-                    <li>Settings</li>
-                    <li>Support</li>
-                    <li>Privacy</li>
+                    <li><a href=""><i class="fa-solid fa-gear"></i> Settings</a></li>
+                    <li><a href=""><i class="fa-solid fa-circle-question"></i> Support</a></li>
+                    <li><a href=""><i class="fa-solid fa-user-shield"></i> Privacy</a></li>
                 </ul>
             </div>
         </div>
-        <div class="content">
+        <div class="main">
             <div class="projects">
                 <p class="project-header">Your Projects</p>
                 <div class="project-item">
@@ -117,4 +117,5 @@
         </div>
     </div>
 </body>
+<script src="https://kit.fontawesome.com/8ee8623724.js" crossorigin="anonymous"></script>
 </html>
