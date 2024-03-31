@@ -221,6 +221,7 @@ ul li {
     grid-template-rows: 1fr;
     justify-items: end;
     margin: 20px 10px 0 10px;
+    font-size: 1.2em;
 }
 
 .announcement-header {
@@ -351,7 +352,7 @@ ul li {
     transform: translate(-50%, 110%) scale(1);
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1220px) {
     .logo img {
         width: 35px;
         height: 35px;
@@ -364,6 +365,26 @@ ul li {
 
     .menu{
         font-size: 1em;
+    }
+
+    .announcement-container {
+        width: 220px;
+        font-size: 0.7em;
+    }
+
+    .trending-container {
+        width: 220px;
+        font-size: 0.7em;
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+    .project-container {
+        font-size: 0.9em;
+    }
+
+    .project-item {
+        padding-bottom: 10px;
     }
 }
 
@@ -381,9 +402,54 @@ ul li {
     }
 }
 
+@media only screen and (max-width: 960px) {
+    .project-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .announcement-container,
+    .trending-container {
+        font-size: 0.9em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .trending-container {
+        grid-template-rows: repeat(4, 60px);
+        height: 250px;
+    }
+
+    .footer {
+        position: relative;
+        top: 60px;
+        height: 15px;
+    }
+}
+
 @media only screen and (max-width: 876px) {
     .menu {
-        font-size: 1.2em;
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .footer {
+        top: 80px;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .welcome-section {
+        display: none;
+    }
+
+    .upper-nav {
+        grid-template-columns: 30px 220px 85px 60px 1fr;
+    }
+
+    .upper-nav img {
+        justify-content: end;
     }
 }
 
@@ -398,8 +464,40 @@ ul li {
         display: none;
     }
 
-    .menu {
-        font-size: 1.2em;
+    .sidebar {
+        height: 120.5%;
+    }
+    .main {
+        height: 109.2%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 350px 50px 370px;
     }
 
+    .announcement-container {
+        grid-template-rows: repeat(3, 100px);
+        height: 300;
+    }
+
+    .footer {
+        font-size: 0.8em;
+        top: 200px;
+    }
+}
+
+@media only screen and (max-width: 716px) {
+    .main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 500px 50px 300px 50px 300px 25px;
+    }
+} 
+
+@media only screen and (max-width: 660px) {
+    .main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 330px 50px 370px;
+    }
+    .announcement-container {
+        grid-template-rows: repeat(3, 95px);
+        height: 280px
+    }
 }
