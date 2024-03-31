@@ -5,21 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8ee8623724.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <div class="upper-nav">
-                <input type="text" name="search" id="search">
-                <img id="notification" src="" alt="notification bell">
-                <img class="profile-photo" src="" alt="profile photo">
-                <a href="">Morgan Oakley</a>
+                <i class="fa-solid fa-magnifying-glass"></i><input type="text" name="search" id="search">
+                <a href=""><i class="fa-solid fa-bell"></i></a>
+                <img class="profile-photo" src="images/profile_00.jpg" alt="profile photo">
+                <p class="username"><a href="">John Doe</a></p>
             </div>
             <div class="lower-nav">
-                <img src="" alt="profile photo" class="profile-photo">
-                <p class="greeting">Hi there,</p>
-                <p>Morgan Oakley (@morgan)</p>
-                <ul>
+                <div class="welcome-section">
+                    <img src="images/profile_00.jpg" alt="profile photo" class="profile-photo">
+                    <p class="welcome">Hi there,</p>
+                    <p class="username">John Doe (@jdoe)</p>
+                </div>
+                <ul class="functions">
                     <li>New</li>
                     <li>Upload</li>
                     <li>Share</li>
@@ -34,17 +37,17 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href=""><i class="fa-solid fa-house"></i>Home</a></li>
-                    <li><a href=""><i class="fa-solid fa-address-card"></i> Profile</a></li>
-                    <li><a href=""><i class="fa-solid fa-message"></i> Messages</a></li>
-                    <li><a href=""><i class="fa-solid fa-clock"></i> History</a></li>
-                    <li><a href=""><i class="fa-solid fa-list-check"></i> Tasks</a></li>
-                    <li><a href=""><i class="fa-solid fa-people-group"></i> Communities</a></li>
+                    <li id="home"><a href=""><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li id="profile"><a href=""><i class="fa-solid fa-address-card"></i> Profile</a></li>
+                    <li id="messages"><a href=""><i class="fa-solid fa-message"></i> Messages</a></li>
+                    <li id="history"><a href=""><i class="fa-solid fa-clock"></i> History</a></li>
+                    <li id="tasks"><a href=""><i class="fa-solid fa-list-check"></i> Tasks</a></li>
+                    <li id="communities"><a href=""><i class="fa-solid fa-people-group"></i> Communities</a></li>
                 </ul>
                 <ul>
-                    <li><a href=""><i class="fa-solid fa-gear"></i> Settings</a></li>
-                    <li><a href=""><i class="fa-solid fa-circle-question"></i> Support</a></li>
-                    <li><a href=""><i class="fa-solid fa-user-shield"></i> Privacy</a></li>
+                    <li id="settings"><a href=""><i class="fa-solid fa-gear"></i> Settings</a></li>
+                    <li id="support"><a href=""><i class="fa-solid fa-circle-question"></i> Support</a></li>
+                    <li id="privacy"><a href=""><i class="fa-solid fa-user-shield"></i> Privacy</a></li>
                 </ul>
             </div>
         </div>
@@ -116,6 +119,6 @@
             </div>
         </div>
     </div>
+    <footer><a href="https://www.freepik.com/free-vector/vector-set-men-professions_3238354.htm#&position=0&from_view=search&track=ais&uuid=76e8df2a-3ea8-499e-a4d0-fc3620d072d7">Image by rawpixel.com</a> on Freepik</footer>
 </body>
-<script src="https://kit.fontawesome.com/8ee8623724.js" crossorigin="anonymous"></script>
 </html>
