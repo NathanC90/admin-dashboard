@@ -9,7 +9,7 @@
 .container {
     display: grid;
     grid-template-columns: 18% 1fr;
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: 60px 1fr;
     grid-template-areas:
     "sidebar header"
     "sidebar main";
@@ -32,6 +32,10 @@
 .upper-nav a {
     color: #222;
     text-decoration: none;
+}
+
+.upper-nav a:hover {
+    color: #999;
 }
 
 #search {
@@ -130,7 +134,6 @@ ul li {
     height: 700px;
     font-size: 1.1em;
     display: grid;
-    justify-content: center;
     align-items: space-around;
 }
 
@@ -162,11 +165,121 @@ ul li {
     margin-top: 120px;
     background-color: var(--main-bg-color);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 50px 40% 50px 40%;
 }
 
-.main > *,
-.main > * > * {
-    border: 1px solid red;
+.project-header,
+.announcement-header,
+.trending-header {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 0  0 0 20px;
+    align-items: center;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 2 / 5;
+    margin-right: 20px;
+}
+
+.project-item {
+    background: #fff;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.project-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.project-item p:nth-child(2) {
+    color: #999;
+}
+
+.project-item i:hover {
+    cursor: pointer;
+}
+
+.project-header {
+    grid-column: 1 / 2;
+}
+
+.announcement-header {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.announcement-container {
+    display: grid;
+    background-color: #fff;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0 10px;
+    font-size: 0.8em;
+    width: 280px;
+}
+
+.announcement-title {
+    font-weight: bold;
+}
+
+.announcement-item p:nth-child(2) {
+    color: #999;
+}
+
+.trending-header {
+    grid-column: 2 / 3;
+}
+
+.trending-container {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    background-color: #fff;
+    border-radius: 20px;
+    font-size: 0.75em;
+    display: grid;
+    width: 280px;
+    padding: 20px;
+    margin: 0 10px;
+    gap: 5px;
+}
+
+.trending-item {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: repeat(2, 25px);
+    grid-template-areas:
+    "image text1"
+    "image text2";
+}
+
+.user-image {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    grid-area: image;
+    align-self: center;
+}
+
+.trending-item .username {
+    padding-left: 10px;
+    grid-area: text1;
+    align-self: end;
+}
+
+
+.trending-item p:nth-child(3) {
+    padding-left: 10px;
+    grid-area: text2;
+    color: #999;
+    align-self: start;
 }
