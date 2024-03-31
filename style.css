@@ -283,3 +283,58 @@ ul li {
     color: #999;
     align-self: start;
 }
+
+.footer {
+    text-align: center;
+}
+
+.footer a {
+    color: #222;
+    text-decoration: none;
+}
+
+.footer i:hover {
+    animation: rotation 2s;
+}
+
+@keyframes rotation {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.image-credit {
+    cursor: pointer;
+    font-size: 12px;
+    position: relative;
+    left: 150px;
+    margin: 0;
+    font-size: 1em;
+}
+
+.image-credit:hover {
+    color: #27282A;
+}
+
+.image-credit::after{
+    background-color: #fff;
+    color: #27282A;
+    font-size: 12px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    width: 280px;
+    height: fit-content;
+    position: absolute;
+    text-align: center;
+    bottom: 5em;
+    left: 0;
+    content: attr(data-tooltip);
+    transform: translate(-50%, 110%) scale(0);
+    transform-origin: top;
+    box-shadow: 0 4px 14px 0 rgba(0,0,0,.2), 0 0 0 1px rgba(0,0,0,.05);
+}
+
+.image-credit:hover:after {
+    display: block;
+    transform: translate(-50%, 110%) scale(1);
+}
