@@ -365,7 +365,7 @@ ul li {
     }
 }
 
-@media only screen and (max-width: 1220px) {
+@media only screen and (max-width: 1300px) {
     .logo img {
         width: 35px;
         height: 35px;
@@ -388,6 +388,10 @@ ul li {
     .trending-container {
         width: 220px;
         font-size: 0.7em;
+    }
+
+    .footer {
+        grid-area: 6 / 1 / 7 / 3;
     }
 }
 
