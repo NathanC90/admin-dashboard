@@ -4,9 +4,11 @@ let sidebarEl = document.querySelectorAll('.menu ul li a');
 
 window.onresize = window.onload = function(){
     windowWidth = this.innerWidth;
-    if(windowWidth <= 876) {
-        shrinkSidebar()
+    if(windowWidth <=1030) {
+        removeTitle();
+        shrinkSidebar();
     } else {
+        resumeTitle();
         resetSidebar();
     }
 }
@@ -84,4 +86,14 @@ function resetSidebar() {
             default:
         }
     }
+}
+
+const logoEl = document.querySelector('.logo');
+
+function removeTitle(){
+    logoEl.innerHTML = `<img src="images/logo.png" alt="logo">`;
+}
+
+function resumeTitle(){
+    logoEl.innerHTML = `<img src="images/logo.png" alt="logo"><a href="">Dashboard</a>`
 }
